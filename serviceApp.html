@@ -1,0 +1,35 @@
+<!--
+    * Auther Name: Lokendra Prajapati   
+    * Date: Friday, April 8, 2016
+    * File info.: Custom service example.
+-->
+
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Custome Service</title>
+	<!-- Loading the required srcipts -->
+	<script type="text/javascript" src="script/angular.min.js"></script>
+	<script type="text/javascript" src="serviceController.js"></script>
+	<script type="text/javascript" src="customService.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div>
+            <div ng-controller="squareController">
+                Enter a number:
+                <input type="number" ng-model="number">
+                <button  ng-click="findSquare()">Square</button>
+                <div>Square of the given number: <b><u>{{answer}}</u></b></div>
+            </div>
+        </div><br/><br/><br/>
+        <div ng-controller="revrseStringController">
+                Enter Name:
+                <input ng-model="name">
+                <button  ng-click="findReverse()">Reverse Name</button>
+                <div>The revrse of the given string: <b><u>{{reversename}}</u></b></div>
+        </div>
+    </div>
+</body>
+</html>
