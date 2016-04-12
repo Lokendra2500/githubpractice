@@ -1,0 +1,226 @@
+
+/* Used for the brief description at the top of the page */
+.brief { clear:left; font-size:15px; 	font-weight:600; color: #333333; margin:0; padding:6px 0 2px 0; }
+.edit { font-size:12px; font-weight:normal; }
+
+.central { margin:0 auto; text-align:center } /* A different class to center, so we can identify sub classes */
+/* ------------  Title area of the component page ----------- */ 
+
+
+/* ------- Subdirectory list in category browsers ------ */
+.subdirectories { margin:0 auto; padding:1px; width:80%; }
+.topcat,
+.subcat
+{
+  border-style: solid;
+	border-width:1px;
+  border-top-color: #D9DFEA;
+  border-left-color: #D9DFEA;
+  border-bottom-color: #0e1f5b;
+  border-right-color: #0e1f5b;
+  color: #FFFFFF;
+  font-size: 11px;
+  text-align: center; 
+	cursor:pointer;
+	margin:2px;
+}
+.topcat { background-color:#003794; }
+.subcat { background-color:#4068AE; }
+
+
+
+
+
+
+/* ---------------------- */
+
+/* This is used to show public, private, workings, solution etc  label on right hand right*/
+.label { font-size:9px; color:#999999; margin-bottom:-14px; margin-left:6px; }
+.public, .protected, .private { border:dashed 1px #999999; padding:4px 6px; }
+
+
+/* ----- EXAMPLE SYSTEM ----- */
+div.problem, div.workings, div.solution, div.reference { border:dashed 1px #999999; padding:4px 6px; margin-top:10px; }
+div.workings:hover, div.solution:hover, div.problem:hover, div.reference:hover { border-right:2px solid #003794; }
+
+.example_select { /*float:right;*/ margin-bottom:10px; font-weight:bold; }
+.example_select a { font-size:12px; }
+.example_select span { font-size:18px; color:#ff6600; }
+
+.example_edit { padding:4px 6px; background-color:#f0f0f0; border:1px solid #999999; }
+.example_edit input { width:300px; }
+.example_edit label { display:block; width:100px; clear:left; color:#006699; font-size:90%; }
+.example_edit textarea { width:98%; height:150px; display:block; }
+.example_edit textarea.workings { height:250px; }
+.example_edit .select { text-align:right; width:100%; }
+.example_edit .select a { font-size:14px; }
+.example_edit .select span { font-size:18px; color:#FF6600; }
+.example_edit .select button { margin-left:15px; }
+
+
+
+
+
+/* Table of content */
+
+img.graph { border:1px solid #cccccc; padding:8px; }
+
+figure { border:1px solid #cccccc; background-color:#f9f9f9; padding:3px; margin:10px; margin-top:10px; margin-left:0; display:block; }
+figcaption { padding:2px; font-size:80%; display:block; }
+figcaption .magnify { margin-top: -10px; text-align: right; }
+
+a.el { text-decoration: none; font-weight: bold; }
+a.elRef { font-weight: bold; }
+a.code:link { text-decoration: none; font-weight: normal; color: #0000FF}
+a.code:visited { text-decoration: none; font-weight: normal; color: #0000FF}
+a.codeRef:link { font-weight: normal; color: #0000FF}
+a.codeRef:visited { font-weight: normal; color: #0000FF}
+
+dl.el { margin-left: 0px; }
+
+.fragment { font-family: monospace }
+
+pre.fragment {
+	border: 1px dashed #CCCCCC;
+	background-color: #f5f5f5;
+	margin: 4px 8px 4px 2px;  /*top right bottom left*/
+  padding: 4px 6px 4px 6px;
+}
+
+div.ah { 
+	background-color: black; 
+	font-weight: bold; color: #ffffff; 
+	margin-bottom: 3px; 
+	margin-top: 3px 
+}
+
+td.md { background-color: #F4F4FB; font-weight: bold; }
+td.mdPrefix {
+  background-color: #F4F4FB;
+  color: #606060;
+	font-size: 80%;
+}
+
+td.mdname1 { background-color: #F4F4FB; font-weight: bold; color: #602020; }
+td.mdname  { background-color: #F4F4FB; font-weight: bold; color: #602020; }
+
+div.groupHeader {
+  margin-left: 16px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+div.groupText { margin-left: 16px; font-style: italic; font-size: 14px }
+
+td.indexkey {
+	background-color: #eeeeff;
+	font-weight: bold;
+	padding: 2px 10px 2px 10px;
+  margin: 2px 0px 2px 0px;
+	border: 1px solid #CCCCCC;
+}
+td.indexvalue {
+	background-color: #eeeeff;
+	font-style: italic;
+	padding: 2px 10px 2px 10px;
+  margin: 2px 0px 2px 0px;
+	border: 1px solid #CCCCCC;
+}
+
+tr.memlist { background-color: #f0f0f0; }
+
+/* ----------- Formula positioning -------------*/
+div.formulaDsp { text-align:left; padding:6px 0 6px 30px; }
+li > div.formulaDsp { padding-left:0; }
+
+div.eqn_num { padding-right:10px; text-align:right; margin-top:-20px;}
+div.eqn_num a { color:#006699; } 
+div.central div.formulaDsp { text-align:center; }
+/* -- this is need by fckeditor -- */
+
+span.keyword       { color: #008000 }
+span.keywordtype   { color: #604020 }
+span.keywordflow   { color: #e08000 }
+span.comment       { color: #800000 }
+span.preprocessor  { color: #806020 }
+span.stringliteral { color: #002080 }
+span.charliteral   { color: #008080 }
+
+/* ------------ Paramaters -------------- */
+
+table.params { border:0; font-size:12px; }
+table.params td { vertical-align:top; }
+table.params td.name { padding-right:10px; color:#006699; font-weight:bold; font-style:italic; }
+
+/* ---- References ---- */
+.reference { margin-top:0px;  }
+.reference li { font-size:90%; }
+
+
+/* ---- New Interface section ------- */
+p.interface { color:#060; /*font-weight:bold;*/ margin:5px 0; }
+table.interface {
+	border:0;
+  padding:0;
+	border-collapse:collapse;
+	width:90%;
+}
+
+table.interface table { width:100% }
+table.interface td {
+/*	background-color: #FAFAFA; */
+  border-top:1px solid #E0E0E0;
+	padding:0 8px 4px 8px;
+	font-size:12px;
+}
+
+table.interface td em { color:#006699; font-style:italic; }
+table.interface td em.op { margin-left:20px; }
+table.interface td.return { text-align:right; vertical-align:top;	white-space:nowrap; width:80px; }
+table.interface td.return em { color:#006699; }
+table.interface td.name em { color:#006699; }
+table.interface td.name em.op { margin-left:20px; }
+table.interface td.name a {
+  color:#003794;
+	text-decoration:none;
+	font-weight:bold;
+	white-space:nowrap;
+}
+table.interface td.name a:visited:hover, table.interface td.name a:link:hover { color: #ff6501; text-decoration:underline }
+table.interface td.name div { font-style:italic; padding-top:2px; }
+
+.excel { color:#339933; }
+
+.inter_cpp { background-color:whitesmoke; margin:4px 0; padding:4px 6px; border:1px dashed #ccc; }
+
+/* ---- Function Header: Above each new section ------ */
+div.fnheader
+{
+	color:#000;
+	line-height:100%;
+ /* border: 1px solid #868686;
+	background-color: #F4F4FB;
+	padding:5px;
+	margin:10px 0;*/
+	margin-bottom:10px;
+	position:relative;
+}
+div.fnheader.rmargin { margin-right:240px; }
+div.fnheader div.edit { position:absolute; right:0px; }
+
+
+table.fnheader td { font-size:13px; font-weight:bold; }
+table.fnheader td.return { }
+table.fnheader td em { color:#006699; font-style:italic; } 
+table.fnheader td.return em { margin:0 2px; }
+table.fnheader td.return span { margin-left:6px; }  /* Function name */
+table.fnheader td.param { font-weight:bold; }
+table.fnheader td.param em { margin:0 2px; }
+table.fnheader td.paramname { color:#660000; font-weight:bold; }
+table.fnheader td.paramname em { margin:0 2px; }
+
+table.fnheader td.options em { margin-left:10px; font-weight:normal; }
+
+/*The compatibility table */
+table.compat { text-align:center; }
+table.compat th { font-weight:bold; color:#006699; }

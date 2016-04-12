@@ -1,0 +1,83 @@
+/* ------- Search Area ---------- */
+
+
+div.search { padding:0; vertical-align:top; text-align:center; margin-top:8px; }
+div.search input { width:170px; }
+div.search div { text-align:center; }
+#searchresults { margin:0; padding:0; width:170px; text-align:left; }
+#searchresults ul { border-top:1px solid #bbbbbb; margin-top:3px; }
+
+	
+/* This is the content of the browser.*/	
+.browser ul { list-style:url(''); list-style:none; padding:0; margin:0; }
+.browser ul.group { border-left:3px solid #003794; padding-left:3px; margin-left:-6px; }
+.browser ul li { padding:2px 0; }
+.browser ul li.menu { padding:4px 0; }
+
+
+/* --- Top level menu items --- */
+li.menu 
+{ 
+	border-top:dashed 1px #CCCCCC;
+	font-weight:600;
+} 
+
+li.bmenu { font-weight:600; padding-top:1px; }
+
+li.menu ul { padding:1px 0 1px 5px }
+
+/*
+li.menu img, li.bmenu img 
+{ position:absolute; display:block; margin-top:1px; } */  
+
+a.menu, li.bmenu a {
+  font-size:13px;
+  color:#003794; /*#069; */
+	padding-left:4px;
+}
+li.bmenu span { font-size:13px; color:#999999; padding-left:4px;  }
+
+a.menu:visited,
+li.bmenu a:visited { color: #003794; }
+
+/* --- The expandable menu items with plus and minus -- */ 
+li.plus ul { padding:1px 0 1px 8px}
+
+a.plus 
+{	
+	color: #455560;	
+  padding-left:4px;
+}
+a.plus:visited  { color: #455560; }
+
+a.menu:visited:hover, 
+a.menu:hover,
+li.bmenu a:visited:hover,
+li.bmenu a:hover,
+a.plus:visited:hover, 
+a.plus:hover  
+{ 
+  background-color:#0066CC; 
+  color: #fefefe; 
+  text-decoration:none; }
+
+
+
+/* Expandable menus */
+li.subbmenu { border-left:3px solid #003794; }
+
+/* Functions within submit page */
+/*li.fnbmenu img {  padding:2px 4px; width:10px; height:14px; position:absolute; }
+li.fnbmenu a { padding:2px 0 0 18px;  }*/
+
+li.grey           { background-color:#f0f3fa; /* #dfe1e3;*/ }
+li.greyselected   { background-color:#003794; color:#fefefe; }
+li.selected       { background-color:#003794; }
+li.selected a, li.selected a:visited     { color:#FFFFFF; }
+li.yellow         { background-color:#ffffbb; }
+li.yellowselected { background-color:#003794; color:#fefefe; }
+li.lightyellow    { background-color:#ffffdd; }
+li.greyselected a,
+li.greyselected a:visited { color:#fefefe; }
+li.yellowselected a,
+li.yellowselected a:visited { color:#fefefe; }

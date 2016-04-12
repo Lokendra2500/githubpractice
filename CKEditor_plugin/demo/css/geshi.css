@@ -1,0 +1,36 @@
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter) */
+pre.cpp, pre.c, pre.csharp
+{
+	border: 1px solid #ddd;
+	background-color: #f5f5f5;
+	margin: 4px 0px;  /*top right bottom left*/
+  padding: 4px 6px;
+/*	clear:right;*/
+	width:auto;
+	overflow:auto;  /* Added 18 Oct - might not work */
+	font-size:90%;
+	 word-wrap:break-word;
+	/*font-size:12px;*/
+}
+
+.c ol, .cpp ol, .csharp ol {margin: 0; }
+
+.c .de1, .c .de2, .cpp .de1, .cpp .de2, .csharp .de1, .csharp .de2 
+{font-weight:normal;background:transparent;color:#000000; padding-left: 5px;}
+
+.c .kw1, .cpp .kw1, .csharp .kw1 {color:#000000; font-weight:bold; }  /* keywords */
+.c .kw2, .cpp .kw2, .csharp .kw2 {color: #000000; font-weight: bold; }
+
+.c .kw3, .cpp .kw3, .csharp .kw3 {color: #336699; }  /* commands */
+
+.c .kw4, .cpp .kw4, .csharp .kw4 {color: #666666; font-weight: bold; }  /* variables */
+.c .es0, .cpp .es0, .csharp .es0 {color: #006699; font-weight: bold; } /* public, private */
+.c .br0, .cpp .br0, .csharp .br0 {color: #66cc66; } 
+.c .st0, .cpp .st0, .csharp .st0 {color: #666666; }  /* text */
+.c .nu0, .cpp .nu0, .csharp .nu0 {color: #0099CC; }  /* numbers */
+.c .me0, .cpp .me0, .csharp .me0 {color: #66cc66; } /* include */
+
+.c .co1, .c .co2, .c .coMULTI, .cpp .co1, .cpp .co2, .cpp .coMULTI, .csharp .co1, .csharp .co2, .csharp .coMULTI 
+{ color:#006600;} /* comments */
+
+.cpp .co2 { font-weight:bold; }
